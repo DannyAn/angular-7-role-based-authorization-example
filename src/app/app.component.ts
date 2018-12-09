@@ -4,7 +4,17 @@ import { Router } from '@angular/router';
 import { AuthenticationService } from './_services';
 import { User, Role } from './_models';
 
-@Component({ selector: 'app', templateUrl: 'app.component.html' })
+@Component({ selector: 'app', 
+styles:[".navbar{padding:0}",`.footer {
+    position: absolute;
+    text-align:right;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #f5f5f5;
+  }`],
+templateUrl: 'app.component.html' 
+})
 export class AppComponent {
     currentUser: User;
 
